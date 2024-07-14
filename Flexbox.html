@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            gap: 10px;
+        /* justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse; */
+        }
+        .child{
+            border: 2px double greenyellow;
+           height: 100px; 
+           width: 100px;
+          
+
+
+        }
+        .child:hover{
+            background-color: hotpink;
+        }
+        .calender{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 10px;
+            
+        }
+        .date,.day{
+            background-color: mistyrose;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            border: 5px ridge rgb(56, 180, 234);
+            border-radius:10%;
+        }
+        .day{
+            color: rgb(235, 28, 131);
+            border: 5px ridge rgb(225, 56, 234);
+            background-color: rgb(117, 235, 246);
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox layout</h1>
+    <div class="box">
+        <div class="child">Child1 </div>
+        <div class="child">Child2 </div>
+        <div class="child">Child3 </div>
+        <div class="child">Child4 </div>
+        <div class="child">Child4 </div>
+        <div class="child">Child4 </div>
+        <div class="child">Child4 </div>
+        <div class="child">Child5 </div>
+        <div class="child">Child6 </div>
+    </div>
+    <section>
+        <h1> Lets Make a calender with exploring grid</h1>
+       <div class="calender"> 
+        <div class="day">SON </div>
+        <div class="day">MON </div>
+        <div class="day">TUE </div>
+        <div class="day">WES </div>
+        <div class="day">THU </div>
+        <div class="day">FRI </div>
+        <div class="day">SAT</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+
+        <div class="date">3</div></div>
+    </section>
+</body>
+</html>
